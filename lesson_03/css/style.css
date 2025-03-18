@@ -1,6 +1,7 @@
 @import url("reset.css");
-p {
-    color: rgb(238, 13, 151);
+
+* {
+    color: rgba(75, 35, 233, 0.688);
 }
 .content p {
     color: blue;
@@ -8,27 +9,31 @@ p {
 .title {
     color: rgb(92, 144, 189);
 }
-.list {
-    color: rgb(19, 73, 5);
+.list li {
+    color: rgb(238, 89, 3);
 }
-.block {
+
+[class*="sub"] {
+    color: rgb(240, 20, 20);
 }
-.sub-title {
-    color: red;
-}
+
 .contacts {
-    color: black;
+    color: rgb(247, 7, 115);
 }
 
 .content__link {
-    color: blueviolet;
+    color: rgb(36, 30, 42);
 }
 #fact02 p {
     color: rgb(74, 76, 76);
 }
 #fact03 p {
-    color: rgba(249, 249, 8, 0.988);
+    color: yellowgreen;
 }
 #fact03 span {
     color: blue;
 }
+.go-home {
+    color: rgb(251, 1, 1);
+}
+
