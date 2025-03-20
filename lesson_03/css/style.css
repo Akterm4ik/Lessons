@@ -2,13 +2,13 @@
 
 * {
     color: rgba(75, 35, 233, 0.688);
-}
+} 
 .content p {
     color: blue;
 }
-.title {
+/* .title {
     color: rgb(92, 144, 189);
-}
+} */
 .list li {
     color: rgb(238, 89, 3);
 }
@@ -17,7 +17,7 @@
     color: rgb(240, 20, 20);
 }
 
-.contacts {
+.contacts, .title {
     color: rgb(247, 7, 115);
 }
 
@@ -33,7 +33,41 @@
 #fact03 span {
     color: blue;
 }
+#fact10 p {
+    color: #4597f7;
+}
 .go-home {
     color: rgb(251, 1, 1);
 }
 
+/* Первый Уровень */
+ul > li {
+    color: red;
+}
+ul > li ~ li {
+    color: green;
+}
+
+/* Вотрой уровень */
+ul > li > ul > li {
+    color: blue;
+}
+ul > li > ul > li ~ li {
+    color: orange;
+}
+
+/* Span на 2 рівні вкладеності */
+ul > li > ul > li > span {
+    color: #a0f0fc;
+}
+ul > li > ul > li ~ li > span {
+    color: #a0f0fc;
+}
+
+/* 3 рівень вкладеності */
+ul > li > ul > li > ol > li {
+    color: #4597f7;
+}
+ul > li > ul > li > ol > li ~ li {
+    color: #5d5d5d;
+}
