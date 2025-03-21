@@ -1,0 +1,90 @@
+@import url("reset.css");
+
+
+body {
+    font-size: 17px;
+}
+
+.title {
+    font-family: Boldonse;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.8;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 3px rgb(221, 255, 0), 5px 5px 5px green;
+}
+.nav {
+    font-weight: 600;
+    text-align: right;
+    text-transform: uppercase;
+}
+.nav a {
+    text-decoration: underline;
+    color: rgba(255, 0, 0, 0.5);
+}
+.sub-title {
+    font-family: Boldonse;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 10px;
+    text-shadow: 2px 3px 4px rgb(96, 94, 94);
+}
+.section p {
+    color: rgba(222, 169, 35, 0.901);
+    line-height: 1.4;
+
+}
+.section a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: red;
+}
+.list {
+    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-style: italic;
+    font-size: 19px;
+    text-align: center;
+    color: rgba(48, 8, 85, 0.415);
+}
+.list li {
+    text-decoration: line-through;
+    text-decoration-color: rgb(230, 1, 1) ;
+    text-transform: lowercase;
+
+}
+.section__list {
+    font-style: oblique;
+    text-align: center;
+    color: blue;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-style: wavy ;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+.section__list  li span {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+.section__list li ~ li {
+    color: yellowgreen;
+
+}
+.section__list li ~ li ~ li ~ li ~ li  {
+    color: red;
+    text-decoration: overline;
+}
+/* Second part */
+
+.ecobazar {
+    font-family: Poppins, serif;
+    font-size: 18px;
+    color: #808080;
+    line-height: 1.5;
+}
+.text h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1A1A1A;
+}
