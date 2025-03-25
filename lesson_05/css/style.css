@@ -1,0 +1,93 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+.header {
+    text-align: center;
+    margin-bottom: 112px;
+}
+.container {
+    background-color: #231F8B;
+}
+.advantages {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 112px;
+    overflow: hidden;
+}
+.head {
+    margin-bottom: 70px;
+}
+.sub-title {
+    color: #5A54F2;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+.title {
+    color: #FFF;
+    font-family: "Circular", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.text {
+    color: var(--light-text-color, #FFF);
+    font-family: "Circular", sans-serif;
+    font-weight: 450;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+}
+.cards {
+    margin-bottom: 112px;
+    margin-left: -15px ;
+}
+.card {
+    width: 230px;
+    padding: 35px 40px;
+    font-size: 0;
+    display: inline-block;
+    background-color: #FFF;
+    margin-right: 30px;
+}
+.card2 {
+    width: 230px;
+    padding: 35px 40px;
+    font-size: 0;
+    display: inline-block;
+    background-color: #5A54F2;;
+    margin-right: 30px;
+}
+.card2 .content p {
+    color: #FFF ;
+    padding-top: 20px;
+}
+.card2 .content h5{
+    color: #FFF;
+    padding: 20px 0 20px 0;
+}
+.card-bottom {
+    vertical-align: -48px;
+}
+.content p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    padding-top: 20px;
+}
+.content h5 {
+    color: var(--text-color, #252B42);
+    font-family: "Circular Std", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding: 20px 0 20px 0;
+}
+
+.footer {
+    text-align: center;
+}
