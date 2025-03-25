@@ -1,10 +1,55 @@
 @import url("reset.css");
 @import url("fonts.css");
 
+/* practice */
+.block {
+    max-width: 1050px;
+    max-height: 500px;
+    margin: 0 auto;
+    overflow: auto;
+    font-size: 0;
+}
+.item {
+    max-width: 25%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align:top;
+    font-family: "Circular", sans-serif;
+    color: #252B42;
+    text-align: center;
+    background-color: #737373;
+    margin-right: -5px;
+}
+.item img {
+    margin-bottom: 15px;
+}
+.item h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0.2;
+    margin-bottom: 15px;
+}
+.item p {
+    font-size: 19px;
+    font-family:"Montserrat" sans-serif;
+    color: 000;
+    text-shadow: 1px 1px chocolate;
+    margin-bottom: 30%;
+}
+.link {
+    font-size: 48px;
+    color: red;
+}
 .header {
+    padding: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 112px;
 }
+
+/* template assignment */
 .container {
     background-color: #231F8B;
 }
@@ -41,10 +86,11 @@
 }
 .cards {
     margin-bottom: 112px;
-    margin-left: -15px ;
+    margin-left: -5px;
 }
 .card {
-    width: 230px;
+    max-width: 230px;
+    min-height: 288px;
     padding: 35px 40px;
     font-size: 0;
     display: inline-block;
@@ -52,7 +98,8 @@
     margin-right: 30px;
 }
 .card2 {
-    width: 230px;
+    max-width: 230px;
+    min-height: 288px;
     padding: 35px 40px;
     font-size: 0;
     display: inline-block;
@@ -87,7 +134,13 @@
     letter-spacing: 0.1px;
     padding: 20px 0 20px 0;
 }
+.advantages {
+    margin-bottom: 150px;
+}
 
 .footer {
     text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 50px;
 }
