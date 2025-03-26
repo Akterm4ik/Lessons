@@ -28,15 +28,17 @@
     font-size: 0;
 }
 .item {
-    max-width: 25%;
+    max-width: 22%;
     padding: 20px;
     display: inline-block;
-    vertical-align:top;
+    vertical-align: top;
     font-family: "Circular", sans-serif;
     color: #252B42;
     text-align: center;
     background-color: #737373;
     margin-right: -5px;
+    margin-left: -5px;
+    margin: 15px;
 }
 .item img {
     margin-bottom: 15px;
@@ -105,12 +107,13 @@
 .cards {
     margin-bottom: 112px;
     margin-left: -5px;
+    margin-right: -5px;
+    font-size: 0;
 }
 .card {
     max-width: 230px;
     min-height: 288px;
     padding: 35px 40px;
-    font-size: 0;
     display: inline-block;
     background-color: #FFF;
     margin-right: 30px;
@@ -119,7 +122,6 @@
     max-width: 230px;
     min-height: 288px;
     padding: 35px 40px;
-    font-size: 0;
     display: inline-block;
     background-color: #5A54F2;;
     margin-right: 30px;
