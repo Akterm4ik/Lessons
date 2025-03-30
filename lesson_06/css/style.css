@@ -74,7 +74,6 @@ body {
     font-size: 0;
     font-family: "Montserrat", sans-serif;
     color: #fff;
-    background: #000 url("..//img/icons/vr-icons/vektorline.svg") 0 0 / no-repeat scroll;
     margin-bottom: 94px;
 }
 .contact-item {
@@ -109,12 +108,12 @@ body {
     vertical-align: middle;
     width: 2px;
     height: 116px;
-    background-color: rgba(192, 183, 232, 0.33);
+    background-color: #c0b7e854;
     margin: 25px 45px;
 }
 .item01{
     max-width: 348px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .item02 {
     max-width: 260px;
