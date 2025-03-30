@@ -1,0 +1,184 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+.header {
+    margin: 32px 32px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.descriptions__container {
+    max-width: 678px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.descriptions__content {
+    font-family: "Poppins", sans-serif;
+    color: #808080;
+    font-size: 14px;
+    padding-bottom: 80px;
+}
+.descriptions__text {
+    line-height: 150%;
+}
+.descriptions__text p~p{
+    padding-top: 30px;
+}
+.list {
+    margin-top: 20px;
+}
+.descriptions__item {
+    background-image: url("../img/icons/check.svg");
+    background-repeat: no-repeat;
+    background-position: left-top;
+    padding: 0 0 20px 28px;
+    line-height: 140%;
+}
+
+
+.vr {
+    background: #302C42;
+}
+
+.contact__container {
+    max-width: 1302px;
+    margin: 0  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contact-block {
+    max-width: 1272px;
+    width: 100%;
+    border-radius: 90px;
+    background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.95) 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
+    font-size: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    background: #000 url("..//img/icons/vr-icons/vektorline.svg") 0 0 / no-repeat scroll;
+    margin-bottom: 94px;
+}
+.contact-item {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    font-size: 14px;
+}
+
+.contact__text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact__text {
+    padding-left: 70px;
+}
+.icon-location {
+    background: url("..//img/icons/vr-icons/location-Icon.svg") 20px 0 / 50px 50px no-repeat scroll;
+}
+.icon-tel{
+    background: url("..//img/icons/vr-icons/phone-call.svg") 0 0 / 50px 50px no-repeat scroll;
+}
+.icon-mail {
+    background: url("..//img/icons/vr-icons/mail.svg") 0 0 / 50px 50px no-repeat scroll;
+}
+.text p {
+    font-size: 14px;
+}
+.vertical-line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 116px;
+    background-color: rgba(192, 183, 232, 0.33);
+    margin: 25px 45px;
+}
+.item01{
+    max-width: 348px;
+    margin-left: 20px;
+}
+.item02 {
+    max-width: 260px;
+}
+.item03{
+    max-width: 322px;
+    margin-left: 20px;
+}
+
+
+.about__container {
+    max-width: 1302px;
+    margin: 0  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.about__block {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.about__image {
+    max-width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 524px;
+    margin-right: 109px;
+}
+.about__text {
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    color: #FFF;
+    margin-top: 47px;
+
+}
+.about__text h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.about__text h4 {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+}
+.about__text p {
+    max-width: 630px;
+    overflow: auto;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+.about__botton {
+    width: 214px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    color: #343045;;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 17px 47px 16px 39px;
+}
+
+.footer {
+    margin: 32px 32px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
