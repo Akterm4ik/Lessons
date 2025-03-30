@@ -25,16 +25,26 @@ body {
     font-family: "Poppins", sans-serif;
     color: #808080;
     font-size: 14px;
+    line-height: 1.5;
     padding-bottom: 80px;
 }
 .descriptions__text {
-    line-height: 150%;
+    max-width: 658px;
+    max-height: 240px;
+    overflow: auto;
+    margin-bottom: 20px;
 }
-.descriptions__text p~p{
-    padding-top: 30px;
+.text__item01 {
+    margin-bottom: 30px;
 }
+.descriptions__list p {
+    max-width: 658px;
+    min-height: 42px;
+    overflow:auto;
+}
+
 .list {
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .descriptions__item {
     background-image: url("../img/icons/check.svg");
@@ -83,7 +93,7 @@ body {
     padding-left: 70px;
 }
 .icon-location {
-    background: url("..//img/icons/vr-icons/location-Icon.svg") 20px 0 / 50px 50px no-repeat scroll;
+    background: url("..//img/icons/vr-icons/location-Icon.svg") 0 -2px / 70px 70px no-repeat scroll;
 }
 .icon-tel{
     background: url("..//img/icons/vr-icons/phone-call.svg") 0 0 / 50px 50px no-repeat scroll;
@@ -148,7 +158,7 @@ body {
     display: inline-block;
     vertical-align: top;
     color: #FFF;
-    margin-top: 47px;
+    padding-top: 47px;
 
 }
 .about__text h3 {
@@ -165,13 +175,15 @@ body {
     margin-bottom: 42px;
 }
 .about__text p {
-    max-width: 630px;
+    width: 630px;
+    width: 100%;
+    height: 228px;
     overflow: auto;
     font-family: "Montserrat", sans-serif;
-    line-height: 1.2;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 28px;
+    line-height: 1.2;
 }
 
 .about__botton {
