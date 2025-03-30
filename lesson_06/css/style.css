@@ -126,6 +126,10 @@ body {
     vertical-align: top;
     font-size: 0;
     font-family: "Montserrat", sans-serif;
+    background-image: url("..//img/icons/about-lines-bg.svg");
+    background-position: -50px 0px;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
 }
 .about__image {
     max-width: 50%;
@@ -133,6 +137,11 @@ body {
     vertical-align: top;
     max-width: 524px;
     margin-right: 109px;
+}
+.about__image img {
+    border-radius: 240px 100px;
+    background: #A3A3A3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .about__text {
     max-width: 40%;
