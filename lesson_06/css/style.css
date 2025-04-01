@@ -10,10 +10,13 @@ body {
     min-height: 100%;
 }
 .header {
-    margin: 32px 32px;
+    padding: 32px 32px;
     text-align: center;
     text-transform: capitalize;
     font-weight: 700;
+}
+.descriptions {
+    padding-bottom: 80px;
 }
 .descriptions__container {
     max-width: 678px;
@@ -26,7 +29,6 @@ body {
     color: #808080;
     font-size: 14px;
     line-height: 1.5;
-    padding-bottom: 80px;
 }
 .descriptions__text {
     max-width: 658px;
@@ -44,13 +46,14 @@ body {
 }
 
 .list {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .descriptions__item {
     background-image: url("../img/icons/check.svg");
     background-repeat: no-repeat;
     background-position: left-top;
-    padding: 0 0 20px 28px;
+    padding-left: 28px;
+    margin-bottom: 20px;
     line-height: 140%;
 }
 
@@ -60,6 +63,7 @@ body {
 }
 .contact {
     padding-top: 50px;
+    margin-bottom: 94px;
 }
 .contact__container {
     max-width: 1302px;
@@ -76,7 +80,6 @@ body {
     font-size: 0;
     font-family: "Montserrat", sans-serif;
     color: #fff;
-    margin-bottom: 94px;;
 }
 .contact-item {
     display: inline-block;
@@ -164,13 +167,12 @@ body {
     padding-top: 47px;
 
 }
-.about__text h3 {
+.about__text h2 strong {
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 5px;
 }
-.about__text h4 {
+.about__text h2 {
     color: rgba(255, 255, 255, 0.95);
     font-size: 36px;
     font-weight: 300;
@@ -186,7 +188,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 28px;
-    line-height: 1.2;
+    line-height: 23px;
 }
 
 .about__botton {
