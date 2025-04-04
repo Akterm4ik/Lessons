@@ -1,0 +1,486 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+    font-family: "Inter", sans-serif;
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+.header {
+    padding-top: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+/* Practice CSS */
+.css-practice__container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    background-color: #25c2c8;
+}
+.block {
+    padding: 35px 35px 0 35px;
+    margin-bottom: 35px; 
+}
+.css-practice__title {
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.link-css {
+    min-width: 200px;
+    padding: 10px 10px;
+    background: #38e02f;
+    font-size: 18px;
+    font-weight: 700;
+    color: #c719e5;
+    border-radius: 15px;
+    text-align: center;
+}
+.link-css:not(:last-child) {
+    margin-right: 15px;
+}
+
+
+
+/* style for hover  */
+.css-practice__link-1:hover {
+    background: #155512;
+    text-shadow: #19dc12 1px 1px;
+}
+.css-practice__link-2:hover {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-shadow: #19dc12 1px 1px;
+}
+.css-practice__link-3:hover {
+    border: 2px solid #000;
+    border-style: dashed;
+    text-shadow: #19dc12 1px 1px;
+}
+.css-practice__link-4:hover {
+    outline: 2px double #000;
+    text-shadow: #19dc12 1px 1px;
+    text-decoration: underline;
+    text-decoration-color: #000 ;
+}
+.css-practice__link-5:hover {
+    box-shadow: 0px 2px 39px 31px rgba(214,43,214,1);
+    text-decoration-color: #412672;
+    text-shadow: #19dc12 1px 1px;
+}
+
+/* style for active  */
+.active__link-1:active{
+    background-color: #0d120d;
+}
+.active__link-2:active{
+    background-color: #0d120d;
+    box-shadow: 0px 2px 39px 31px rgba(214,43,214,1);
+}
+.active__link-3:active{
+    background: url("..//img/practice/active01.jpg") center center / 150px 150px no-repeat;
+}
+.active__link-4:active{
+    border-radius: 50%;
+    text-decoration: underline;
+    font-size: 9px;
+}
+.active__link-5:active{
+    visibility: hidden;
+}
+
+/* style for visited  */
+.visited__link-1:visited{
+    color: red;
+}
+.visited__link-2:visited{
+    color: #4F4F4F;
+}
+.visited__link-3:visited{
+    background-color: #4F4F4F;
+}
+
+/* style for focus  */
+.focus__link-1:focus{
+    outline: 3px solid red;
+}
+.focus__link-2:focus{
+    background-color: #cfcbcb;
+}
+.focus__link-3:focus{
+    border: 3px dotted #175615;
+    color: #000;
+    text-shadow: 2px 2px #e1870a;
+}
+.focus__link-4:focus{
+    font-size: 25px;
+    color: #25c2c8;
+    text-shadow: 1px 1px #6e6c6c;
+}
+.focus__link-5:focus{
+    box-shadow: 1px 3px 35px 20px rgba(26,41,156,1);
+    color: #2015c1;
+}
+/* style for target  */
+.css-practice__hover:target, .css-practice__active:target, .css-practice__visited:target, .css-practice__focus:target{
+    background: linear-gradient(90deg, rgba(107,52,148,1) 14%, rgba(117,10,51,1) 87%);
+    padding-bottom: 40px;
+    border-radius: 0% 100% 0% 100% / 69% 41% 59% 31% ;
+}
+
+/* style for :first-child, :first-of-type */
+.fc-fot__items, .lc-lot__items *{
+    font-size: 14px;
+    font-family: "Minecraft", sans-serif;
+}
+.fc-fot__items p,.fc-fot__items div {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.css-practice__fc-fot div:last-of-type{
+    margin-bottom: 0;
+}
+.fc-fot__items p:first-child{
+    max-width: 800px;
+    width: 100%;
+    min-height: 5%;
+    border-radius: 15px;
+    background: green;
+}
+.fc-fot__items div:first-of-type{
+    max-width: 800px;
+    width: 100%;
+    min-height: 5%;
+    border-radius: 15px;
+    background: #c1d207;
+}
+.lc-lot__items p,.lc-lot__items div {
+    margin-bottom: 15px;
+    padding: 5px;
+}
+.css-practice__lc-lot div:last-of-type{
+    margin-bottom: 0;
+}
+
+.lc-lot__items div:last-child{
+    max-width: 800px;
+    width: 100%;
+    min-height: 5%;
+    border-radius: 15px;
+    background: green;
+}
+.lc-lot__items p:last-of-type{
+    max-width: 800px;
+    width: 100%;
+    min-height: 5%;
+    border-radius: 15px;
+    background: #c1d207
+}
+
+/* HOMEWORK PART #1 */
+.meet-our {
+    padding-top: 61px;
+    padding-bottom: 102px;
+    background: var(--412672, #412672);
+    font-family: "Inter" sans-serif;
+    margin-bottom: 55px;
+}
+.meet-our__container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.title {
+    color: var(--Style, #FFF);
+    font-size: 38px;
+    margin-bottom: 31px;
+
+}
+.title__text {
+    line-height: 1.21;
+}
+
+.cards {
+    font-size: 0;
+}
+
+.cards__item {
+    max-width: 386px;
+    width: 100%;
+    min-height: 476px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: #FFF;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+    margin-right: 20px ;
+}
+.cards__item:hover {
+    background: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+.cards__item:last-child {
+    margin-right: 0;
+}
+.cards__item > *{
+    margin-bottom: 16px;
+}
+
+.cards__image {
+    max-width: 347px;
+    width: 100%;
+}
+
+.cards__text h3 {
+    color: var(--000000, #000);
+    font-size: 22px;
+    font-weight: 600;
+}
+.cards__text{
+    min-height: 76px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 19px;
+    overflow: auto;
+
+}
+.cards__text h3{
+    padding-bottom: 16px;
+}
+
+.cards__text p{
+    max-height: 76px;
+    height: 100%;
+    color: var(--Gray-2, #4F4F4F);
+    font-weight: 400;
+    line-height: 19px;
+    overflow: auto;
+}
+.link {
+    display: inline;
+    color: var(--fe-3-f-3-f, #FE3F3F);
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.link:hover a {
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* HOMEWORK PART #2 */
+.best-faculty {
+    margin-bottom: 42px;
+}
+.best-faculty__container {
+    max-width: 1401px;
+    margin: 0  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.best-faculty__items {
+    max-width: 1401px;
+    width: 100%;
+    font-size: 0;
+    /* Не зрозумів як інакше вирівняти блок по лівому краю так, щоб він був ширше того, що зверху по макету */
+    margin-left: 90px;
+    overflow: visible; 
+}
+.best-faculty__text {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 518px;
+    color: var(--412672, #412672);
+    font-size: 34px;
+    padding-top: 98px;
+    margin-right: 58px;
+}
+.best-faculty__text span{
+    font-weight: 700;
+    line-height: 1.3;
+}
+.best-faculty__text h2{
+    margin-bottom: 20px;
+}
+.best-faculty__text p{
+    color: var(--412672, #412672);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.list {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 20px;
+    line-height: 2.55;
+}
+.list li{
+    margin-left: 44px;
+}
+
+.list li::before {
+    content: "";
+    background: url('../img/icons/list-icon.svg') 0 0 no-repeat;
+    width: 29px;
+    height: 29px;
+    vertical-align: middle;
+    margin-left: -44px;
+    margin-right: 15px;
+}
+
+.best-faculty__image {
+    max-width: 764px;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.best-faculty__image img{
+    margin-bottom: 15px;
+}
+.pic-nav{
+    max-width: 190px;
+    width: 100%;
+    height: 15px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.pic-item{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 15px;
+    background: #cfcbcb;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    text-align:center;
+    color: #cfcbcb;
+}
+.pic-item:hover {
+    background-color: #412672;
+}
+.pic-item:last-child {
+    margin-right: 0;
+}
+
+/* GAME */
+
+.game {
+background: #e2e1e1;
+margin-bottom: 43px;
+}
+.game-container{
+    max-width: 1240px;
+    min-height: 720px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: url("..//img/game/gamebg.jpg") 0 0 / cover no-repeat;
+}
+.game__levels {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-top: 230px;
+    font-family: "Minecraft", sans-serif;
+    color: #e2e1e1;
+    font-size: 25px;
+}
+.game__level {
+    width: 200px;
+    margin: 0  auto;
+    text-align: center;
+    border-radius: 25px;
+    padding: 5px 5px;
+    color: #b3a2a2;
+    text-shadow: #000 2px 2px, #000 -1px -1px;
+    background-image: url("..//img/game/lvl-bg.jpg");
+}
+.game__level:hover{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.level {
+    background-image: url("..//img/game/lvl-bg.jpg");
+    border: 2px solid #7d5f4b;
+    visibility: hidden;
+}
+
+.game__level01 {
+    width: 20px;
+    height: 120px;
+    margin-left: 355px;
+}
+.game__level02 {
+    width: 150px;
+    height: 20px;
+    margin-left: 355px;
+}
+.game__level03 {
+    width: 20px;
+    height: 55px;
+    margin-left: 485px;
+}
+.game__level04 {
+    width: 290px;
+    height: 20px;
+    margin-left: 215px;
+}
+.game__level05 {
+    width: 20px;
+    height: 55px;
+    margin-left: 215px;
+}
+.game__level06 {
+    width: 570px;
+    height: 12px;
+    margin-left: 215px;
+}
+.game__level07 {
+    width: 20px;
+    height: 55px;
+    margin-left: 765px;
+}
+.game__level08 {
+    width: 185px;
+    height: 12px;
+    margin-left: 600px;
+}
+
+.game__level:hover ~ .game__level01,
+.game__level01:hover, .game__level01:hover ~ .game__level02,
+.game__level02:hover, .game__level02:hover ~ .game__level03,
+.game__level03:hover, .game__level03:hover ~ .game__level04,
+.game__level04:hover, .game__level04:hover ~ .game__level05,
+.game__level05:hover, .game__level05:hover ~ .game__level06,
+.game__level06:hover, .game__level06:hover ~ .game__level07,
+.game__level07:hover, .game__level07:hover ~ .game__level08,
+.game__level08:hover {
+    visibility: visible;
+}
+.game__level08 img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.game__level08 img:active{
+    width: 100px;
+    height: 100px;
+}
+
+.footer {
+    padding-bottom: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+}
