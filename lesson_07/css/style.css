@@ -128,6 +128,7 @@ body {
     box-shadow: 1px 3px 35px 20px rgba(26,41,156,1);
     color: #2015c1;
 }
+
 /* style for target  */
 .css-practice__hover:target, .css-practice__active:target, .css-practice__visited:target, .css-practice__focus:target{
     background: linear-gradient(90deg, rgba(107,52,148,1) 14%, rgba(117,10,51,1) 87%);
@@ -168,7 +169,6 @@ body {
 .css-practice__lc-lot div:last-of-type{
     margin-bottom: 0;
 }
-
 .lc-lot__items div:last-child{
     max-width: 800px;
     width: 100%;
@@ -230,6 +230,7 @@ body {
 }
 .cards__item:last-child {
     margin-right: 0;
+    margin-bottom: 0;
 }
 .cards__item > *{
     margin-bottom: 16px;
@@ -244,6 +245,7 @@ body {
     color: #000;
     font-size: 22px;
     font-weight: 600;
+    padding-bottom: 16px;
 }
 .cards__text{
     min-height: 76px;
@@ -251,10 +253,6 @@ body {
     font-size: 15px;
     line-height: 19px;
     overflow: auto;
-
-}
-.cards__text h3{
-    padding-bottom: 16px;
 }
 
 .cards__text p{
@@ -270,7 +268,6 @@ body {
     color:  #FE3F3F;
     font-size: 15px;
     font-weight: 400;
-    margin-bottom: 0;
 }
 .link:hover a {
     text-decoration: underline;
@@ -320,12 +317,15 @@ body {
 .list {
     color: #4F4F4F;
     font-size: 20px;
-    line-height: 2.55;
+    line-height: 1.6;
 }
 .list li{
+    margin-bottom: 20px;
     margin-left: 44px;
 }
-
+.list li:last-child{
+    margin-bottom: 0;
+}
 .list li::before {
     content: "";
     background: url('../img/icons/list-icon.svg') 0 0 no-repeat;
