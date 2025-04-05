@@ -184,6 +184,69 @@ body {
     background: #c1d207
 }
 
+/* Childs */
+
+.childs {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #412672;
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 15px;
+}
+
+.child-items > div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #38e02f;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 95px;
+    margin-bottom: 25px;
+}
+.childs__text {
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+.child-item:last-child {
+    margin-right: 0px;
+}
+
+.nth-child__item:nth-child(2){
+    background-color: red;
+}
+
+.nth-last-child__item:nth-last-child(2){
+    background-color: red;
+}
+
+.nth-child-odd__item:nth-child(odd){
+    background-color: red;
+}
+
+.nth-child-even__item:nth-child(even){
+    background-color: red;
+}
+
+.nth-child-np4__item:nth-child(n+4){
+    background-color: red;
+}
+
+.nth-child-n3m1__item:nth-child(3n-1){
+    background-color: red;
+}
+
+.nth-child-n3p1__item:nth-child(3n+1){
+    background-color: red;
+}
+
+.nth-child-n4n__item:nth-child(4n){
+    background-color: red;
+}
+
 /* HOMEWORK PART #1 */
 .meet-our {
     padding-top: 61px;
