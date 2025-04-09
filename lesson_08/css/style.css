@@ -1,0 +1,123 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(90deg, rgba(107,52,148,1) 14%, rgba(62,53,193,1) 84%);
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+.page{
+    margin-bottom: 30px;
+}
+.header, .footer{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.footer{
+    padding-bottom: 30px;
+}
+.web-graphic-items {
+    font-size: 0;
+    padding: 20px;
+}
+.web-graphic__list{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.web-graphic__container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 10px solid #343232;
+}
+
+.item a {
+    margin-right: 15px;
+}
+.link a:hover{
+    background: rgba(171, 171, 171, 0.201);
+    border-radius: 20%;
+}
+.item:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.item:not(:nth-child(1)){
+    padding-left: 30px;
+}
+
+.item:nth-child(2)::before{
+    content: '';
+    background: url('..//img/icons/arrow-down-header.svg') center center no-repeat;
+    width: 16px;
+    height: 10px;
+    vertical-align: middle;
+    margin-left: -30px;
+    margin-right: 5px;
+}
+.item:nth-child(3)::before{
+    content: '';
+    background: url('..//img/icons/search-icon.svg') center center no-repeat;
+    width: 21px;
+    height: 21px;
+    vertical-align: middle;
+    margin-left: -30px;
+    margin-right: 10px;
+}
+
+.item:nth-child(4)::before{
+    content: '';
+    background: url('..//img/icons/arrow-right.svg') center center no-repeat;
+    width: 11px;
+    height: 18px;
+    vertical-align: middle;
+    margin-left: -28px;
+    margin-right: 10px;
+}
+
+.item:nth-child(n+5):nth-child(-n+12){
+    margin-left: -30px;
+}
+
+.item:nth-child(13)::before{
+    content: '';
+    background: url('..//img/icons/plus.svg') center center no-repeat;
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    margin-left: -28px;
+    margin-right: 10px;
+}
+.image img:not(:last-child){
+    margin-bottom: 15px;
+}
+.image {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px;
+}
+.image:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.image2 img{
+    border-radius: 27.322% 0;
+}
+.image3 {
+    background: #ffffff;
+}
+
+
