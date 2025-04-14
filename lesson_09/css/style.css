@@ -1,0 +1,28 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(90deg, rgba(107,52,148,1) 14%, rgba(62,53,193,1) 84%);
+}
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+}
+
+.header, .footer{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.header{
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.footer{
+    padding-bottom: 30px;
+}
+
+
