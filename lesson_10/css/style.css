@@ -186,7 +186,7 @@ body {
     font-weight: 500;
     line-height: 150%;
 }
-.basket{
+.basket__link{
     display: inline-block;
     background: #F2F2F2;
     padding: 10px;
@@ -194,6 +194,10 @@ body {
     position: absolute;
     top: 81%;
     left: 79%;
+}
+.basket__link:hover{
+    background-color: #00B207;
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32); 
 }
 
 .basket__link::after{
