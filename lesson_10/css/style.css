@@ -50,7 +50,7 @@ body {
     z-index: 5;
 }
 .block01{
-    width: 1000px;
+    max-width: 1000px;
     min-height: 50px;
     color: #ffffff;
     background: #06007e;
@@ -60,7 +60,7 @@ body {
     padding: 20px 75px;
 }
 .block02{
-    width: 1000px;
+    max-width: 1000px;
     min-height: 50px;
     color: #ffffff;
     background: #850f72;
@@ -70,7 +70,7 @@ body {
     padding: 20px 75px;
 }
 .block03{
-    width: 1000px;
+    max-width: 1000px;
     min-height: 50px;
     color: #ffffff;
     background: #0b7906;
@@ -153,14 +153,14 @@ body {
     background: #FFF;
     box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 }
-.card:hover .card__title h2{
+.card:hover .title-item__link h2{
     color:#2C742F;
 }
-.card__basket:hover {
+.card:hover .basket__link{
+    border: 1px solid  #2C742F;
     background: #00B207;
-    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);   
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 }
-
 .product__card {
     position: relative;
 }
@@ -171,7 +171,7 @@ body {
 .card__image img{
     max-width: 100%;
 }
-.card__title {
+.card__items {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -180,23 +180,31 @@ body {
     line-height: 150%; /* 21px */
     padding: 16px 16px 0 16px;
 }
-.card__price {
+.title-item{
+    max-width: 220px;
+}
+.title-item__price {
     color: #1A1A1A;
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
 }
+
+
 .basket__link{
     display: inline-block;
+    vertical-align: middle;
     background: #F2F2F2;
-    padding: 10px;
+    padding: 10px 10px 7px 10px;
     border-radius: 50%;
     position: absolute;
-    top: 81%;
-    left: 79%;
+    right: 20px;
+    bottom: 28px;
+
 }
+
 .basket__link:hover{
-    background-color: #00B207;
+    background: #2C742F;
     box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32); 
 }
 
@@ -204,24 +212,29 @@ body {
     content: "";
     background: url("..//img/basket0.png") center center no-repeat;
     width: 20px;
-    height: 21px;
+    height: 20px;
 }
-.card__basket:hover .basket__link::after{
+.basket:hover .basket__link::after{
     content: "";
     background: url("..//img/basket.png") center center no-repeat;
     width: 20px;
-    height: 21px;
+    height: 20px;
 }
+
+.favorites-card {
+    position: absolute;
+    top: 6%;
+    right: 6.6%;
+}
+
 .favorites-card__link{
+    display: block;
     padding: 10px;
     background: #ffffff;
     border: 1px solid #F2F2F2;
     border-radius: 50%;
-    position: absolute;
-    top: 3%;
-    left: 80%;
-    z-index: 2;
     visibility: hidden;
+    margin-bottom: 6px;
 }
 .favorites-card__link:hover{
     background-color: #00B207;
@@ -234,15 +247,14 @@ body {
     height: 20px;
 }
 
+
 .pre-view-card__link{
+    display: block;
     padding: 10px;
     border: 1px solid #F2F2F2;
     background: #ffffff;
     border-radius: 50%;
     position: absolute;
-    z-index: 2;
-    top: 15%;
-    left: 80%;
     visibility: hidden;
 }
 .pre-view-card__link:hover{
@@ -284,8 +296,11 @@ body {
 
 
 /* Audit-block */
+.section-technology__container{
+    position: relative;
+}
 .section-technology__audit {
-    max-width: 1102px;
+    max-width: 1230px;
     width: 100%;
     font-size: 0;
     margin-bottom: 55px;
@@ -294,34 +309,35 @@ body {
     position: relative;
     z-index: 1;
 } 
-.audit-technology__small-ring::after{
+.audit-technology__image::before{
     content: '';
     width: 65px;
     height: 65px;
-    background: url("..//img/business/small-ring.webp") 0 0 no-repeat;
+    background: url("..//img/business/small-ring.webp") center center no-repeat;
     position: absolute;
-    top: 25%;
-    left: 0;
+    top: 31%;
+    left: -30%;
+    z-index: 1;
 }
-.audit-technology__big-ring::after{
+.audit-technology__image::after{
     content: '';
     width: 401px;
     height: 401px;
-    background: url("../img/business/big-ring.webp") 0 0 no-repeat;
+    background: url("../img/business/big-ring.webp") center center no-repeat;
     position: absolute;
-    top: 35%;
-    left: 1.5%;
+    top: 40%;
+    left: -27%;
     z-index: -2;
 }
-.audit-technology__vertical-dot::after{
+.section-technology__container::before{
     content: url('');
     width: 213.764px;
     height: 472.16px;
-    background: url("..//img/business/vertical-dot.webp") 0 0 no-repeat;
+    background: url("..//img/business/vertical-dot.webp") center center no-repeat;
     position: absolute;
-    top: 75%;
-    left: 2%;
-    z-index: -2;
+    top: 35%;
+    left: 3.2%;
+    z-index: 1;
 }
 
 .audit-technology__image {
@@ -337,7 +353,7 @@ body {
     z-index: 1;
 }
 
-.audit-technology__image::before{
+/* .audit-technology__image::before{
     content: '';
     background: url("..//img/business/tech-img-bg.avif") lightgray 50% / cover no-repeat;
     width: 372px;
@@ -349,7 +365,7 @@ body {
     left: 23px;
     top: 18%;
     z-index: -2;
-}
+} */
 .audit-technology__image img{
     max-width: 430px;
     width: 100%;
@@ -362,8 +378,7 @@ body {
     display: inline-block;
     vertical-align: top;
     color: #FFF;
-    position: absolute;
-    top: 20%;
+    padding-top: 97px;
 }
 
 .title-technology {
@@ -420,33 +435,33 @@ body {
     margin-bottom: 38px;
     
 }
-.risk-technology__small-ring::after{
+.risk-technology__image::before{
     content: url('');
     width: 65px;
     height: 65px;
     background: url("../img/business/small-ring.webp") center center no-repeat;
     position: absolute;
-    right: 28%;
-    top: -9%;
+    top: -8.9%;
+    left: 21.4%;
     z-index: 1;
 }
-.risk-technology__middle-ring::after{
+.risk-technology__image::after{
     content: '';
     width: 262px;
     height: 262px;
     background: url("..//img/business/middle-ring.webp") center center no-repeat;
     position: absolute;
-    top: -8%;
-    left: 85%;
-    z-index: 1;
+    top: -4.93%;
+    left: 68.84%;
+    z-index: -1;
 }
-.risk-technology__horizontal-dot::after{
+.section-technology__risk::before{
     content: '';
     width: 473px;
     height: 214px;
     background: url("..//img/business/horizontal-dot.webp") center center no-repeat;
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 70%;
 }
 .risk-technology__content{
@@ -454,11 +469,8 @@ body {
     display: inline-block;
     vertical-align: top;
     color: #FFF;
-    position: relative;
     margin-right: 43px;
-    top: 30px;
-    left: 0;
-    z-index: 2;
+    padding-top: 30px;
 }
 .risk-technology__title{
     font-family:"Circular", sans-serif;
