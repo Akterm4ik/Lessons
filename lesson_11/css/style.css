@@ -294,10 +294,14 @@ body {
     left: 450px;
 }
 
-.car__body:hover .wheel-car__left, 
-.car__body:hover .wheel-car__right{
-    transform: rotate(1440deg);
-    transition: all 0.3s;
+.car__container:hover .wheel-car__left, 
+.car__container:hover .wheel-car__right{
+    transform: rotate(720deg);
+    transition: all 0.4s;
+}
+.car__container:hover .car__body{
+    transform: translateX(30%);
+    transition: all 0.4s;
 }
 
 .footer{
