@@ -196,6 +196,7 @@ body {
     flex-basis: 387px;
     padding: 20px;
     background: #ffffff;
+    transition-duration: 0.3s;
 }
 .card-meet-our > div:not(:last-child){
     margin-bottom: 16px;
@@ -220,11 +221,12 @@ body {
     line-height: 1.266;
 }
 .card-meet-our__link {
+    max-width: 77px;
     color: #FE3F3F;
     font-size: 15px;
     line-height: 1.266;
 }
-.card-meet-our__link:hover a{
+.card-meet-our__link:hover > a{
     text-decoration: underline;
     text-decoration-color: #FE3F3F;
 }
