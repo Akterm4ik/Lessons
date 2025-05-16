@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson14</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header id="header" class="header header--margin">
+            <div class="header__container">
+                Some content for HEADER
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <form action="#" enctype="multipart/form-data" class="form">
+                    <div class="form__line form__line--margin">
+                        <input class="form__input" autocomplete="off" type="text" placeholder="Enter text"
+                            name="form[]">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input class="form__input" autocomplete="off" type="text" placeholder="Enter text" name="form[]"
+                            disabled>
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <label class="form__label" for="name_1">Enter your name (label+input)</label>
+                        <input class="form__input" id="name_1" autocomplete="off" placeholder="Enter your name"
+                            name="form[]" type="text">
+                    </div>
+                    <div class="form__lable-wrapper form__lable-wrapper--margin">
+                        <label class="form__label">
+                            <h5 class="form__title">Enter your name (input inside label)</h5>
+                            <input autocomplete="off" placeholder="Enter your name" name="form[]" type="text"
+                                class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input required type="email" placeholder="Enter your e-mail" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input value="#" type="hidden" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input required type="tel" placeholder="Enter your tel +3" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input type="password" placeholder="Enter your password" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input type="number" placeholder="Enter quantity" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <label class="form__label">
+                            Enter color
+                            <input type="color" name="form[]" class="form__input form__input--padding">
+                        </label>
+                    </div>
+                    <div class="form__line form__line--margin form__line--search">
+                        <input type="search" placeholder="Search" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <input type="date" placeholder="Enter date" name="form[]" class="form__input">
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <label class="form__label">
+                            Enter something
+                            <input type="range" value="0" name="form[]" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <label class="checkbox">
+                            <input type="checkbox" value="some" name="form[]" class="checkbox__input">
+                            <span class="checkbox__label">Something</span>
+                        </label>
+                    </div>
+                    <div class="form__line form__line--margin">
+                        <label class="checkbox">
+                            <input checked type="checkbox" name="form[]" class="checkbox__input">
+                            <span class="checkbox__label">Something</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="checkout">
+                <div class="checkout__container">
+                    <form action="#" method="post" enctype="multipart/form-data" class="form">
+                        <div class="form__row">
+                            <div class="form__column-info info-column">
+                                <h2 class="info-column__title">Billing Information</h2>
+                                <div class="info-column__items">
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">First name</h3>
+                                            <input required type="text" name="form[]" placeholder="Your first name"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Last name</h3>
+                                            <input required type="text" name="form[]" placeholder="Your last name"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Company Name <span>(optional)</span></h3>
+                                            <input required type="text" name="form[]" placeholder="Company name"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="info-column__items">
+                                    <div class="info-column__item info-column__item--max-width">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Street Address</h3>
+                                            <input required type="text" name="form[]" placeholder="Street Address"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="info-column__items">
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Country / Region</h3>
+                                            <select required class="info-column__select" name="form[]">
+                                                <option class="info-column__option" value="#">Select</option>
+                                                <option class="info-column__option" value="#">Select</option>
+                                                <option class="info-column__option" value="#">Select</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">States</h3>
+                                            <select required class="info-column__select" name="form[]">
+                                                <option class="info-column__option" value="#">Selects</option>
+                                                <option class="info-column__option" value="#">Selects</option>
+                                                <option class="info-column__option" value="#">Selects</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="info-column__item">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Zip Code</h3>
+                                            <input required type="text" name="form[]" placeholder="Zip Code"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="info-column__items">
+                                    <div class="info-column__item info-column__item--max-width">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Email</h3>
+                                            <input required type="email" name="form[]" placeholder="Email Address"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                    <div class="info-column__item info-column__item--max-width">
+                                        <label class="info-column__label">
+                                            <h3 class="info-column__sub-title">Phone</h3>
+                                            <input required type="tel" name="form[]" placeholder="Phone number"
+                                                class="info-column__input">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="info-column__items info-column__items--chk">
+                                    <div class="info-column__item info-column__item--chk">
+                                        <label class="info-column__label info-column__label--chk">
+                                            <input type="checkbox" autocomplete="off" name="form[]"
+                                                class="info-column__input info-column__input--chk">
+                                            <h3 class="info-column__sub-title info-column__sub-title--chk">Ship to a
+                                                different address</h3>
+                                        </label>
+                                    </div>
+                                </div>
+                                <h2 class="info-column__title">Additional Info</h2>
+                                <div class="info-column__item info-column__item--max-width">
+                                    <label class="info-column__label">
+                                        <h3 class="info-column__sub-title">Order Notes (Optional)</h3>
+                                        <textarea rows="6.25" name="form[]"
+                                            placeholder="Notes about your order, e.g. special notes for delivery"
+                                            class="info-column__input info-column__input--resize"></textarea>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__column-order order-column">
+                                <h2 class="order-column__title">Order Summery</h2>
+                                <div class="order-column__items">
+                                    <div class="order-column__wrapper">
+                                        <div class="order-column__row order-column__row--mb">
+                                            <a href="#" class="order-column__image">
+                                                <img src="img/icons/green-paper.avif" alt="Green Capsicum">
+                                                <p class="order-column__product">Green Capsicum x5</p>
+                                            </a>
+                                            <p class="order-column__price">$70.00</p>
+                                        </div>
+                                        <div class="order-column__row order-column__row--mb">
+                                            <a href="#" class="order-column__image">
+                                                <img src="img/icons/red-papper.avif" alt="Red Capsicum">
+                                                <p class="order-column__product">Red Capsicum x1</p>
+                                            </a>
+                                            <p class="order-column__price">$70.00</p>
+                                        </div>
+                                    </div>
+                                    <div class="order-column__row order-column__row--padding">
+                                        <h4 class="order-column__label">Subtotal:</h4>
+                                        <p class="order-column__price">$84.00</p>
+                                    </div>
+                                    <div class="order-column__row order-column__row--padding">
+                                        <h4 class="order-column__label">Shipping:</h4>
+                                        <p class="order-column__price order-column__price--fw500">Free</p>
+                                    </div>
+                                    <div class="order-column__row order-column__row--padding">
+                                        <h4 class="order-column__label">Total:</h4>
+                                        <p class="order-column__price"><span>$84.00</span></p>
+                                    </div>
+                                </div>
+                                <h2 class="order-column__title">Payment Method</h2>
+                                <div class="order-column__items order-column__items--radio">
+                                    <div class="order-column__item order-column__item--radio">
+                                        <label class="order-column__label order-column__label--radio">
+                                            <input value="payment" checked required type="radio" name="form[payment]"
+                                                class="order-column__radio">
+                                            <h3 class="order-column__sub-title">Cash on Delivery</h3>
+                                        </label>
+                                    </div>
+                                    <div class="order-column__item order-column__item--radio">
+                                        <label class="order-column__label order-column__label--radio">
+                                            <input value="payment" required type="radio" name="form[payment]"
+                                                class="order-column__radio">
+                                            <h3 class="order-column__sub-title">Paypal</h3>
+                                        </label>
+                                    </div>
+                                    <div class="order-column__item order-column__item--radio">
+                                        <label class="order-column__label order-column__label--radio">
+                                            <input value="payment" required type="radio" name="form[payment]"
+                                                class="order-column__radio">
+                                            <h3 class="order-column__sub-title">Amazon Pay</h3>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="order-column__items">
+                                    <div class="order-column__item order-column__item--btn">
+                                        <button class="order-column__btn" type="submit" name="form{}">Place
+                                            Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                Some content for FOOTER
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
