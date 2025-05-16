@@ -226,22 +226,32 @@ body {
     background: url("../img/icons/info-def.svg") center center / cover no-repeat;
     width: 20px;
     height: 20px;
+    transition: all 0.4s;
 }
 .info-column__sub-title--chk:hover.info-column__sub-title--chk::before{
     content: "";
     width: 20px;
     height: 20px;
     background: url("..//img/icons/info-hov.svg") center center / cover no-repeat;
+    transition: all 0.4s;
 }
 .info-column__input--chk:checked + .info-column__sub-title--chk::before{
     content: "";
     width: 20px;
     height: 20px;
-    background: url("..//img/icons/info-chk.svg") center center / cover no-repeat
+    background: url("..//img/icons/info-chk.svg") center center / cover no-repeat;
+    transition: all 0.4s;
 }
 
 .info-column__input--resize{
     resize: none;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+    outline: 1px solid #00b207;
 }
 
 .order-column {
@@ -350,16 +360,19 @@ body {
     width: 20px;
     height: 20px;
     background: url("../img/icons/radio-def.svg") center center / cover no-repeat;
+    transition: all 0.3s;
 }
 .order-column__label--radio:hover .order-column__sub-title::before{
     content: "";
     width: 20px;
     height: 20px;
     background: url("..//img/icons/radio-hover.svg") center center / cover no-repeat;
+    transition: all 0.3s;
 } 
 .order-column__radio:checked + .order-column__sub-title::before {
     content: "";
     width: 20px;
     height: 20px;
     background: url("..//img/icons/radio-chk.svg") center center / cover no-repeat;
+    transition: all 0.3s;
 }
